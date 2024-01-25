@@ -1,0 +1,42 @@
+Maven is a build automation tool used primarily for Java projects.
+ Maven centralizes the management of project dependencies, making it easy to specify and download libraries and frameworks.
+ Maven defines a standard build lifecycle with phases such as compile, test, package, and deploy.
+
+Hibernate is an open-source object-relational mapping (ORM) framework for Java.
+It simplifies the interaction between Java applications and relational databases by mapping Java objects to database tables and vice versa.
+
+JDBC stands for Java Database Connectivity. It is a Java-based API that provides a standard interface for connecting and interacting with relational databases.
+	Key components of JDBC include:
+
+1. DriverManager: is used to establish a connection to the database.
+
+2. Driver: allows Java applications to connect to a particular database.
+
+3. Connection: Represents a connection to a database.
+The Connection interface provides methods for creating statements, committing transactions, and managing connections.
+
+4. Statement: Used for executing SQL queries and updates. Includes methods for executing queries, updates, and managing result sets.
+
+5. ResultSet: Represents the result set of a query. It provides methods for retrieving and iterating over the data returned by a query.
+
+Statement and PreparedStatement are two interfaces in JDBC that are used for executing SQL queries.
+	- Statement: Queries are sent to the database as plain SQL strings every time they are executed.
+	  PreparedStatement: Queries are precompiled and stored in a cache, which can improve performance for repeated executions of the same queries.
+	- Statement: Concatenation of user inputs directly into SQL queries is common, making it susceptible to SQL injection attacks.
+	   PreparedStatement: Uses placeholders for parameters, and input parameters are treated as values, not executable parts of the SQL.
+
+
+StandardServiceRegistryBuilder() - configures Hibernate using the settings specified in the "hibernate.cfg.xml" file.
+
+MetadataSources is responsible for aggregating metadata information from various sources.
+This typically includes annotated classes, XML mappings, and other configuration sources.
+
+Metadata: Represents the aggregated metadata about your domain model, containing information about mappings, entities, etc.
+
+SessionFactoryBuilder creates a SessionFactory based on the configuration provided through the Metadata and other settings.
+
+SessionFactory is a central factory for creating and managing Session instances, which in turn are used for database operations.
+
+Session is a short-lived object that represents a single-unit-of-work with the database.
+
+transaction.commit() is called to commit the transaction, persisting the changes to the database.

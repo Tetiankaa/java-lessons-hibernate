@@ -1,4 +1,4 @@
-package hibernate;
+package hibernate.lesson6;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

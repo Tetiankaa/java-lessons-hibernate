@@ -1,4 +1,4 @@
-package hibernate;
+package hibernate.lesson6;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package jdbc;
+package hibernate.lesson6.jdbc;
 
 
 import java.sql.*;
